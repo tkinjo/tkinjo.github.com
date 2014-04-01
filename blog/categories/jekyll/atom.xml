@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Jekyll | tkinjo.com]]></title>
+  <link href="http://tkinjo.com/blog/categories/jekyll/atom.xml" rel="self"/>
+  <link href="http://tkinjo.com/"/>
+  <updated>2014-04-01T16:34:18+09:00</updated>
+  <id>http://tkinjo.com/</id>
+  <author>
+    <name><![CDATA[tkinjo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Helper]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/octopress-helper/"/>
+    <updated>2014-03-11T19:42:21+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/octopress-helper</id>
+    <content type="html"><![CDATA[<p>個人的なツールです。</p>
+
+<p>windows 用の bat ファイル。</p>
+
+<h2>概要</h2>
+
+<p>記事の投稿の際には下記のコマンドを打ちますよね。</p>
+
+<pre><code>bundle exec new_post[$title]
+</code></pre>
+
+<p>このコマンドを短いコマンドで済ますことができます。</p>
+
+<pre><code>po $title
+</code></pre>
+
+<p>コマンドの対応リストを下記に載せておきます。</p>
+
+<pre><code>new_post[$title], post $title, po $title
+new_page[$title], page $title, pa $title
+generate, g
+watch,    w
+preview,  p
+help,     h, -h
+</code></pre>
+
+<h2>インストール</h2>
+
+<p><a href="uploads/bat/140311/o.bat">o.bat</a> をダウンロードして、Octopress のディレクトリに置くだけです。</p>
+
+<h2>ダウンロード</h2>
+
+<p><a href="uploads/bat/140311/o.bat">o.bat</a></p>
+
+<h2>一言</h2>
+
+<p>どうせなら ruby で作ればよかったかも…。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/octopress/"/>
+    <updated>2014-03-11T00:00:00+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/octopress</id>
+    <content type="html"><![CDATA[<h2>ダウンロード</h2>
+
+<p><a href="http://octopress.org/">Octopress</a><br/>
+<a href="http://octopress.org/">http://octopress.org/</a></p>
+
+<p>より。</p>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+</code></pre>
+
+<h2>インストール</h2>
+
+<pre><code>gem install bundler
+
+bundle install
+
+bundle exec rake install
+</code></pre>
+
+<h2>記事の作成</h2>
+
+<pre><code>bundle exec rake new_post["title"]
+</code></pre>
+
+<h2>ページの作成</h2>
+
+<pre><code>bundle exec rake new_page[super-awesome]
+</code></pre>
+
+<p> <!-- more --></p>
+
+<h2>Publish</h2>
+
+<pre><code>bundle exec rake generate
+</code></pre>
+
+<h2>watch</h2>
+
+<pre><code>bundle exec rake watch
+</code></pre>
+
+<h2>プレビュー</h2>
+
+<pre><code>bundle exec rake preview
+</code></pre>
+
+<p><a href="http://localhost:4000">http://localhost:4000</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll 1.4.3 の Windows への導入時の問題]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/jekyll-windows-problem/"/>
+    <updated>2014-03-11T00:00:00+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/jekyll-windows-problem</id>
+    <content type="html"><![CDATA[<h2>問題</h2>
+
+<p>jekyll 1.4.3 を使用時に</p>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<p>を実行時すると、下記のようなエラーが出る。</p>
+
+<p> <!-- more --></p>
+
+<pre><code>PS C:\jekyll\test-site&gt; jekyll serve --trace
+Configuration file: C:/jekyll/test-site/_config.yml
+        Source: C:/jekyll/test-site
+   Destination: C:/jekyll/test-site/_site
+  Generating... C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:247:in `mkdir': Invalid argument - C:/jekyll/test-site/_site/C: (Errno::EINVAL)
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:247:in `fu_mkdir'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:221:in `block (2 levels) in mkdir_p'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:219:in `reverse_each'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:219:in `block in mkdir_p'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:205:in `each'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:205:in `mkdir_p'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/convertible.rb:168:in `write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:259:in `block in write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:397:in `block (2 levels) in each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:396:in `each'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:396:in `block in each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:395:in `each'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:395:in `each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:259:in `write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:41:in `process'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/command.rb:18:in `process_site'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/commands/build.rb:23:in `build'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/commands/build.rb:7:in `process'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/bin/jekyll:97:in `block (2 levels) in &lt;top (required)&gt;'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:180:in `call'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:180:in `call'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:155:in `run'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/runner.rb:402:in `run_active_command'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/runner.rb:78:in `run!'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/delegates.rb:11:in `run!'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/import.rb:10:in `block in &lt;top (required)&gt;
+</code></pre>
+
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
+
+<p>より引用。</p>
+
+<h2>解決策</h2>
+
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
+
+<p>によると、jekyll 1.4.3 が原因らしい。
+アンインストールして、1.4.2 を入れる。</p>
+
+<pre><code>gem uninstall jekyll
+
+gem install jekyll --version "=1.4.2"
+</code></pre>
+
+<h2>参考</h2>
+
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll Bootstrap]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/jekyll-bootstrap/"/>
+    <updated>2014-03-11T00:00:00+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/jekyll-bootstrap</id>
+    <content type="html"><![CDATA[<h2>インストール</h2>
+
+<h3>jekyll のインストール</h3>
+
+<pre><code>gem install jekyll
+</code></pre>
+
+<h3>jekyll-bootstrap のダウンロード</h3>
+
+<pre><code>git clone https://github.com/plusjade/jekyll-bootstrap.git
+</code></pre>
+
+<h2>記事の投稿</h2>
+
+<pre><code>rake post title="Hello World"
+</code></pre>
+
+<h2>ページの作成</h2>
+
+<pre><code>rake page name="about.md"
+</code></pre>
+
+<p> <!-- more --></p>
+
+<h3>記事との違い</h3>
+
+<p>静的なページに特化。<br/>
+記事とは違い、タグやカテゴリの自動管理がされない。<br/>
+日付も不要、階層化が可能。</p>
+
+<h2>ビルド</h2>
+
+<pre><code>jekyll build
+</code></pre>
+
+<h2>テストサーバの起動</h2>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
+
+<p>から。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Jekyll]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/jekyll/"/>
+    <updated>2014-03-11T00:00:00+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/jekyll</id>
+    <content type="html"><![CDATA[<h2>インストール</h2>
+
+<h3>jekyll のインストール</h3>
+
+<pre><code>gem install jekyll
+</code></pre>
+
+<h2>ビルド</h2>
+
+<pre><code>jekyll build
+</code></pre>
+
+<h2>テストサーバの起動</h2>
+
+<pre><code>jekyll serve
+</code></pre>
+
+<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
+
+<p>から。</p>
+]]></content>
+  </entry>
+  
+</feed>

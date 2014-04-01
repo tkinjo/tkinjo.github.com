@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | tkinjo.com]]></title>
+  <link href="http://tkinjo.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://tkinjo.com/"/>
+  <updated>2014-04-01T16:34:18+09:00</updated>
+  <id>http://tkinjo.com/</id>
+  <author>
+    <name><![CDATA[tkinjo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress Helper]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/octopress-helper/"/>
+    <updated>2014-03-11T19:42:21+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/octopress-helper</id>
+    <content type="html"><![CDATA[<p>個人的なツールです。</p>
+
+<p>windows 用の bat ファイル。</p>
+
+<h2>概要</h2>
+
+<p>記事の投稿の際には下記のコマンドを打ちますよね。</p>
+
+<pre><code>bundle exec new_post[$title]
+</code></pre>
+
+<p>このコマンドを短いコマンドで済ますことができます。</p>
+
+<pre><code>po $title
+</code></pre>
+
+<p>コマンドの対応リストを下記に載せておきます。</p>
+
+<pre><code>new_post[$title], post $title, po $title
+new_page[$title], page $title, pa $title
+generate, g
+watch,    w
+preview,  p
+help,     h, -h
+</code></pre>
+
+<h2>インストール</h2>
+
+<p><a href="uploads/bat/140311/o.bat">o.bat</a> をダウンロードして、Octopress のディレクトリに置くだけです。</p>
+
+<h2>ダウンロード</h2>
+
+<p><a href="uploads/bat/140311/o.bat">o.bat</a></p>
+
+<h2>一言</h2>
+
+<p>どうせなら ruby で作ればよかったかも…。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://tkinjo.com/blog/2014/03/11/octopress/"/>
+    <updated>2014-03-11T00:00:00+09:00</updated>
+    <id>http://tkinjo.com/blog/2014/03/11/octopress</id>
+    <content type="html"><![CDATA[<h2>ダウンロード</h2>
+
+<p><a href="http://octopress.org/">Octopress</a><br/>
+<a href="http://octopress.org/">http://octopress.org/</a></p>
+
+<p>より。</p>
+
+<pre><code>git clone git://github.com/imathis/octopress.git octopress
+</code></pre>
+
+<h2>インストール</h2>
+
+<pre><code>gem install bundler
+
+bundle install
+
+bundle exec rake install
+</code></pre>
+
+<h2>記事の作成</h2>
+
+<pre><code>bundle exec rake new_post["title"]
+</code></pre>
+
+<h2>ページの作成</h2>
+
+<pre><code>bundle exec rake new_page[super-awesome]
+</code></pre>
+
+<p> <!-- more --></p>
+
+<h2>Publish</h2>
+
+<pre><code>bundle exec rake generate
+</code></pre>
+
+<h2>watch</h2>
+
+<pre><code>bundle exec rake watch
+</code></pre>
+
+<h2>プレビュー</h2>
+
+<pre><code>bundle exec rake preview
+</code></pre>
+
+<p><a href="http://localhost:4000">http://localhost:4000</a></p>
+]]></content>
+  </entry>
+  
+</feed>

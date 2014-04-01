@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>tkinjo.com</title>
+  <title>Jekyll 1.4.3 の Windows への導入時の問題 - tkinjo.com</title>
   <meta name="author" content="tkinjo">
 
   
-  <meta name="description" content="個人的なツールです。 windows 用の bat ファイル。 概要 記事の投稿の際には下記のコマンドを打ちますよね。 bundle exec new_post[$title] このコマンドを短いコマンドで済ますことができます。 po $title コマンドの対応リストを下記に載せておきます。 &hellip;">
+  <meta name="description" content="">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tkinjo.com">
+  <link rel="canonical" href="http://tkinjo.com/blog/2014/03/11/jekyll-windows-problem">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="tkinjo.com" type="application/atom+xml">
@@ -88,87 +88,12 @@
       <div id="content" class="row">
 
         <div  class="col-md-8">
-        <div class="blog-index">
+        <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/03/11/octopress-helper/">Octopress Helper</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-11T19:42:21+09:00" pubdate data-updated="true">03/11/2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>個人的なツールです。</p>
-
-<p>windows 用の bat ファイル。</p>
-
-<h2>概要</h2>
-
-<p>記事の投稿の際には下記のコマンドを打ちますよね。</p>
-
-<pre><code>bundle exec new_post[$title]
-</code></pre>
-
-<p>このコマンドを短いコマンドで済ますことができます。</p>
-
-<pre><code>po $title
-</code></pre>
-
-<p>コマンドの対応リストを下記に載せておきます。</p>
-
-<pre><code>new_post[$title], post $title, po $title
-new_page[$title], page $title, pa $title
-generate, g
-watch,    w
-preview,  p
-help,     h, -h
-</code></pre>
-
-<h2>インストール</h2>
-
-<p><a href="uploads/bat/140311/o.bat">o.bat</a> をダウンロードして、Octopress のディレクトリに置くだけです。</p>
-
-<h2>ダウンロード</h2>
-
-<p><a href="uploads/bat/140311/o.bat">o.bat</a></p>
-
-<h2>一言</h2>
-
-<p>どうせなら ruby で作ればよかったかも…。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/11/ruby-environment-manager/">Ruby のバージョンマネージャとか Gem マネージャ</a></h1>
+      <h1 class="entry-title">Jekyll 1.4.3 の Windows への導入時の問題</h1>
     
     
       <p class="meta">
@@ -191,130 +116,7 @@ help,     h, -h
   </header>
 
 
-  <div class="entry-content"><h2>バージョンマネージャ</h2>
-
-<h3>rbenv</h3>
-
-<p>現在の主流。<br/>
-windows 環境に導入はできないもよう。</p>
-
-<h3>pik</h3>
-
-<p>rbenv, RVM の windows 版。</p>
-
-<h3>RVM</h3>
-
-<p>rbenv が出るまで主流だった？</p>
-
-<h2>gem マネージャ</h2>
-
-<h3>gemset</h3>
-
-<p>RVM の機能、rbenv ではプラグインとして利用可能。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/11/octopress/">Octopress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-11T00:00:00+09:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>ダウンロード</h2>
-
-<p><a href="http://octopress.org/">Octopress</a><br/>
-<a href="http://octopress.org/">http://octopress.org/</a></p>
-
-<p>より。</p>
-
-<pre><code>git clone git://github.com/imathis/octopress.git octopress
-</code></pre>
-
-<h2>インストール</h2>
-
-<pre><code>gem install bundler
-
-bundle install
-
-bundle exec rake install
-</code></pre>
-
-<h2>記事の作成</h2>
-
-<pre><code>bundle exec rake new_post["title"]
-</code></pre>
-
-<h2>ページの作成</h2>
-
-<pre><code>bundle exec rake new_page[super-awesome]
-</code></pre>
-
-<p> </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/03/11/octopress/">続きを読む &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/11/jekyll-windows-problem/">Jekyll 1.4.3 の Windows への導入時の問題</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-11T00:00:00+09:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>問題</h2>
+<div class="entry-content"><h2>問題</h2>
 
 <p>jekyll 1.4.3 を使用時に</p>
 
@@ -323,138 +125,121 @@ bundle exec rake install
 
 <p>を実行時すると、下記のようなエラーが出る。</p>
 
-<p> </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/03/11/jekyll-windows-problem/">続きを読む &rarr;</a>
-    </footer>
-  
+<p> <!-- more --></p>
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/11/jekyll-bootstrap/">Jekyll Bootstrap</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-11T00:00:00+09:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>インストール</h2>
-
-<h3>jekyll のインストール</h3>
-
-<pre><code>gem install jekyll
+<pre><code>PS C:\jekyll\test-site&gt; jekyll serve --trace
+Configuration file: C:/jekyll/test-site/_config.yml
+        Source: C:/jekyll/test-site
+   Destination: C:/jekyll/test-site/_site
+  Generating... C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:247:in `mkdir': Invalid argument - C:/jekyll/test-site/_site/C: (Errno::EINVAL)
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:247:in `fu_mkdir'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:221:in `block (2 levels) in mkdir_p'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:219:in `reverse_each'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:219:in `block in mkdir_p'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:205:in `each'
+    from C:/Ruby193/lib/ruby/1.9.1/fileutils.rb:205:in `mkdir_p'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/convertible.rb:168:in `write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:259:in `block in write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:397:in `block (2 levels) in each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:396:in `each'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:396:in `block in each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:395:in `each'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:395:in `each_site_file'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:259:in `write'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/site.rb:41:in `process'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/command.rb:18:in `process_site'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/commands/build.rb:23:in `build'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/lib/jekyll/commands/build.rb:7:in `process'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/jekyll-1.4.3/bin/jekyll:97:in `block (2 levels) in &lt;top (required)&gt;'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:180:in `call'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:180:in `call'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/command.rb:155:in `run'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/runner.rb:402:in `run_active_command'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/runner.rb:78:in `run!'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/delegates.rb:11:in `run!'
+    from C:/Ruby193/lib/ruby/gems/1.9.1/gems/commander-4.1.5/lib/commander/import.rb:10:in `block in &lt;top (required)&gt;
 </code></pre>
 
-<h3>jekyll-bootstrap のダウンロード</h3>
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
 
-<pre><code>git clone https://github.com/plusjade/jekyll-bootstrap.git
+<p>より引用。</p>
+
+<h2>解決策</h2>
+
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
+
+<p>によると、jekyll 1.4.3 が原因らしい。
+アンインストールして、1.4.2 を入れる。</p>
+
+<pre><code>gem uninstall jekyll
+
+gem install jekyll --version "=1.4.2"
 </code></pre>
 
-<h2>記事の投稿</h2>
+<h2>参考</h2>
 
-<pre><code>rake post title="Hello World"
-</code></pre>
-
-<h2>ページの作成</h2>
-
-<pre><code>rake page name="about.md"
-</code></pre>
-
-<p> </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2014/03/11/jekyll-bootstrap/">続きを読む &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/03/11/jekyll/">Jekyll</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-11T00:00:00+09:00" pubdate data-updated="true"></time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>インストール</h2>
-
-<h3>jekyll のインストール</h3>
-
-<pre><code>gem install jekyll
-</code></pre>
-
-<h2>ビルド</h2>
-
-<pre><code>jekyll build
-</code></pre>
-
-<h2>テストサーバの起動</h2>
-
-<pre><code>jekyll serve
-</code></pre>
-
-<p><a href="http://localhost:4000/">http://localhost:4000/</a></p>
-
-<p>から。</p>
+<p><a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">ruby &ndash; Jekyll &ndash; Error Running &lsquo;Jekyll Serve&rsquo; &ndash; Stack Overflow</a><br/>
+<a href="http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve">http://stackoverflow.com/questions/21137096/jekyll-error-running-jekyll-serve</a></p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">tkinjo</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2014-03-11T00:00:00+09:00" pubdate data-updated="true"></time>
+      
+
+<span class="categories">
   
-  <ul class="pager">
+    <a class='category' href='/blog/categories/jekyll/'>jekyll</a>
+  
+</span>
+
+
+    </p>
     
-    <li><a href="/blog/archives">Blog Archives</a></li>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://tkinjo.com/blog/2014/03/11/jekyll-windows-problem/" data-via="" data-counturl="http://tkinjo.com/blog/2014/03/11/jekyll-windows-problem/" >Tweet</a>
+  
+  
+  
+</div>
+
     
-  </ul>
+    <p class="meta">
+
+      <ul class="pager">
+        
+          <li class="previous"><a href="/blog/2014/03/11/jekyll-bootstrap/" title="Previous Post: jekyll bootstrap">&laquo; jekyll bootstrap</a></li>
+        
+        
+        <li class="next"><a href="/blog/2014/03/11/octopress/" title="Next Post: octopress">octopress &raquo;</a></li>
+        
+      </ul>
+
+    </p>
+  </footer>
+</article>
+
 </div>
         </div>
         
