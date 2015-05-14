@@ -1,0 +1,19 @@
+---
+layout: page
+title: Categories
+permalink: /categories/
+---
+
+{% if site.categories.size > 0 %}
+  <ul>
+    {% for category in site.categories %}
+      <li>
+        <a href="/categories/{{ category[0] }}/">
+          {{ category[0] }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+    <p>There are no categories.</p>
+{% endif %}

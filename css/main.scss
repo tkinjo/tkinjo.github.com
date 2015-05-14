@@ -1,0 +1,338 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// // Our variables
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+
+
+// // Using media queries with like this:
+// // @include media-query($palm) {
+// //     .wrapper {
+// //         padding-right: $spacing-unit / 2;
+// //         padding-left: $spacing-unit / 2;
+// //     }
+// // }
+// @mixin media-query($device) {
+//     @media screen and (max-width: $device) {
+//         @content;
+//     }
+// }
+
+@mixin alias($args...) {
+  @include i-am-a-mixin-with-a-long-name($args...)
+}
+
+%vertical-rhythm {
+    margin-bottom: 30px / 2;
+}
+
+
+
+
+* {
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  background-color: #F5F8FF;
+
+}
+
+
+pre {
+  background-color: #fff;
+  border: 1px solid #9D9D9D;
+}
+
+
+code {
+  color: #0D00CA;
+  background-color: #E6E5F4;
+}
+
+
+
+
+.navbar-default {
+
+  background-color: #fff;
+  background-image: none;
+  box-shadow: none;
+  background-color: #2C96CD;
+
+  a {
+  }
+  .navbar-brand {
+    font-family: Ubuntu, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-weight: 400;
+    
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+
+  .navbar-nav >li {
+    
+    >a {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+        // opacity: 0.85;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+
+    &.rss-subscribe >a {
+      color: #FFCA57;
+
+      &:hover {
+        color: #FFCA57;
+      }
+    }
+  }
+
+  .navbar-toggle {
+
+    border-color: #fff;
+
+    &:focus, &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+}
+
+
+
+
+.page-heading {
+
+  // padding: 10px 0;
+  // font-weight: bold;
+  display: none;
+}
+.post-header {
+
+  // padding: 20px 0;
+  // padding: 0 0 20px;
+
+  .post-title {
+    // font-weight: bold;
+  }
+}
+
+.post-content {
+  padding: 20px 0;
+
+  p {
+    line-height: 1.8;
+  }
+
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 15px;
+    }
+  }
+
+}
+
+.site-footer {
+  margin-top: 50px;
+  padding: 30px 0 20px;
+  border-top: 1px solid #EAEFFC;
+
+  color: #777;
+}
+
+
+
+
+
+
+.post-list article {
+  margin-bottom: 120px;
+}
+
+
+
+
+
+.pagination {
+  // display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+.more {
+  // margin: 10px;
+}
+
+dt {
+  margin-top: 0.5em;
+}
+dd {
+  margin-left: 1em;
+}
+
+
+
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+
+
+  .navbar-default {
+
+    height: 80px;
+
+    a {
+      display: inline-block;
+      height: 80px;
+    }
+    .navbar-header a {
+      // line-height: 47px;
+      font-size: x-large;
+      font-weight: bold;
+    }
+
+    li a {
+      // line-height: 47px;
+    }
+  }
+  .more {
+    margin: 20px;
+  }
+
+  .page-heading {
+
+    // padding: 10px 0;
+    // font-weight: bold;
+    display: block;
+  }
+
+  .navbar-default {
+
+    height: 140px;
+
+
+
+    a {
+      display: block;
+      height: 140px;
+    }
+
+
+    .navbar-header a {
+      line-height: 98px;
+      font-size: -webkit-xxx-large;
+
+      // &:hover {
+      //   color: #fff;
+      //   opacity: 0.5;
+      // }
+    }
+
+
+    .navbar-nav>li>a {
+      line-height: 137px;
+      padding: 0 30px;
+      font-weight: bold;
+
+      // &:hover {
+      //   color: #fff;
+      //   // opacity: 0.85;
+      //   background-color: rgba(255, 255, 255, 0.15);
+      // }
+    }
+  }
+
+  .page-heading {
+
+    padding: 20px 0;
+    font-weight: bold;
+  }
+  .post-header {
+
+    padding: 20px 0;
+
+    .post-title {
+      font-weight: bold;
+    }
+  }
+
+  .post-content {
+    padding: 20px 0;
+  }
+
+  .site-footer {
+    margin-top: 140px;
+    padding: 50px 0 40px;
+    border-top: 1px solid #EAEFFC;
+
+    color: #777;
+  }
+
+
+
+
+
+
+  .post-list article {
+    margin-bottom: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        // "base",
+        // "layout",
+        "syntax-highlighting"
+;

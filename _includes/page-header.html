@@ -1,0 +1,58 @@
+<header class="post-header">
+
+  <h1 class="post-title">
+    <i class="fa fa-file-o"></i> {{ include.title | default: page.title }}
+  </h1>
+  
+  <p class="post-meta">
+
+    <i class="fa fa-calendar"></i> 
+    {% if page.date %}
+      {{ page.date | date: "%F %T" }}
+    {% else %}
+      -
+    {% endif %}
+
+    {% if page.author %}
+       • <i class="fa fa-user"></i> {{ page.author }}
+    {% endif %}
+
+    {% if page.meta %}
+       • <i class="fa fa-info-circle"></i> {{ page.meta }}
+    {% endif %}
+
+  </p>
+
+  {% if page.categories.size > 0 %}
+    <p class="post-meta categories">
+      <i class="fa fa-book"></i> Categories: 
+
+      {% for category in page.categories %}
+
+        <a href="/categories/{{ category }}/">{{ category }}</a>
+
+        {% if forloop.last != true %}
+          , 
+        {% endif %}
+        
+      {% endfor %}
+    </p>
+  {% endif %}
+
+  {% if page.tags.size > 0 %}
+    <p class="post-meta tags">
+      <i class="fa fa-tags"></i> Tags: 
+    
+      {% for tag in page.tags %}
+        
+        <a href="/tags/{{ tag }}/">{{ tag }}</a>
+
+        {% if forloop.last != true %}
+          , 
+        {% endif %}
+        
+      {% endfor %}
+    </p>
+  {% endif %}
+
+</header>

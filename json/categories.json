@@ -1,0 +1,14 @@
+---
+permalink: /json/categories.json
+---
+{
+  "categoryKeys": [
+    {% for category in site.categories %}
+      {% if forloop.last != true %}
+        "{{ category[0] }}", 
+      {% else %}
+        "{{ category[0] }}"
+      {% endif %}
+    {% endfor %}
+  ]
+}

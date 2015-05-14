@@ -1,0 +1,20 @@
+---
+layout: page
+title: Tags
+permalink: /tags/
+---
+
+
+{% if site.tags.size > 0 %}
+  <ul>
+    {% for tag in site.tags %}
+      <li>
+        <a href="/tags/{{ tag[0] }}/">
+          {{ tag[0] }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+    <p>There are no tags.</p>
+{% endif %}

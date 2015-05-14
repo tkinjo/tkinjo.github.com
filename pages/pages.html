@@ -1,0 +1,19 @@
+---
+layout: page
+title: Pages
+permalink: /pages/
+---
+
+{% if site.pages.size > 0 %}
+  <ul>
+    {% for page in site.pages %}
+      {% if page.title %}
+        <li>
+          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% else %}
+    <p>There are no pages.</p>
+{% endif %}

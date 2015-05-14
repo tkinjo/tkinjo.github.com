@@ -1,0 +1,14 @@
+---
+permalink: /json/tags.json
+---
+{
+  "tagKeys": [
+    {% for tag in site.tags %}
+      {% if forloop.last != true %}
+        "{{ tag[0] }}", 
+      {% else %}
+        "{{ tag[0] }}"
+      {% endif %}
+    {% endfor %}
+  ]
+}
