@@ -14,7 +14,7 @@ layout: default
 
     {% for post in paginator.posts %}
 
-      <article>
+      <article data-sr=''>
 
         <header class="post-header">
 
@@ -118,7 +118,7 @@ layout: default
 
   </div>{% endcomment %}
   <nav class="text-center">
-    <ul class="pagination">
+    <ul class="pagination" data-sr='enter bottom move 20px reset'>
       {% if paginator.previous_page %}
         <li>
           <a href="/page{{ paginator.previous_page }}" class="previous" aria-label="Previous">

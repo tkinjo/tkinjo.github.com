@@ -57,6 +57,23 @@
   transition: all 0.15s ease-in-out;
 }
 
+.site-nav,
+.post-list article,
+.site-footer p,
+nav .pagination {
+  -moz-transition: none 0 ease 0;
+  -o-transition: none 0 ease 0;
+  -webkit-transition: none 0 ease 0;
+  transition: none 0 ease 0;
+}
+
+
+
+
+
+
+
+
 body {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   background-color: #F5F8FF;
